@@ -1,0 +1,6 @@
+waste=int(input())
+scholarship=int(input())
+if waste-scholarship>0:
+    print("Надо занять",waste-scholarship,"рублей")
+else:
+    print("Ура!Стипендии хватит!!!")
