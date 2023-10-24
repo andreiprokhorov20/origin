@@ -27,4 +27,7 @@ elif ostatok_pachki == 1 and (month in month_31):
     waste += price
 elif ostatok_pachki == 0 and month != 2:
     waste += 2 * price
-print(waste,ostatok_pachki)
+if waste-scholarship>0:
+    print("Надо занять",waste-scholarship,"рублей")
+else:
+    print("Ура!Стипендии хватит!!!")
