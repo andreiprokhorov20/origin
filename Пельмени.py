@@ -10,7 +10,7 @@ price = int(input())
 ostatok_pachki = 0
 month_30 = [4,6,9,11]
 month_31 = [1,3,5,7,8,10,12]
-waste = scholarship
+waste = 0
 dayweek = random.randint(1,7)
 if ostatok_pachki == 0 and ((((year % 100 != 0 and year % 4 == 0) or (year % 400 == 0)) and (month == 2)) or (month in month_30) or (dayweek == 1)):
     waste += price
