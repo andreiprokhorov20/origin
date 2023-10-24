@@ -18,4 +18,13 @@ for i in range(1,5):
             waste += price
             ostatok_pachki += 2
         ostatok_pachki-=0.5
+dayweek = random.randint(1,7)
+if ostatok_pachki == 0 and ((((year % 100 != 0 and year % 4 == 0) or (year % 400 == 0)) and (month == 2)) or (month in month_30) or (dayweek == 1)):
+    waste += price
+elif ostatok_pachki == 0.5 and (month != 2):
+    waste += price
+elif ostatok_pachki == 1 and (month in month_31):
+    waste += price
+elif ostatok_pachki == 0 and month != 2:
+    waste += 2 * price
 print(waste,ostatok_pachki)
