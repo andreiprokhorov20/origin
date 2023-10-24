@@ -18,6 +18,6 @@ elif ostatok_pachki == 0.5 and (month != 2):
     waste += price
 elif ostatok_pachki == 1 and (month in month_31):
     waste += price
-elif ostatok_pachki == 0:
+elif ostatok_pachki == 0 and month != 2:
     waste += 2 * price
 print(waste)
